@@ -70,7 +70,10 @@ Beast attack missed!
 Round 9 begins
 
 Orderus readies his attack! Damage dealt is 24.
-Beast health is now -5
+
+Beast life reached 0.
+
+Beast died.
 
 GAME OVER
 

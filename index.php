@@ -2,4 +2,17 @@
 require_once 'vendor/autoload.php';
 use HeroGame\GameEngine\Gameplay;
 
-$game = new Gameplay;
+?>
+<form id="frm" method="post"  action="?game" >
+    <input type="submit" value="Start Game" id="submit" />
+</form>
+
+<?php
+if(isset($_GET['game']))
+{
+    $game = new Gameplay;
+}
+?>
+
+
+

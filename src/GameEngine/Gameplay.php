@@ -85,7 +85,7 @@ class Gameplay
             $this->swapRoles();
         }
         if($this->roundsPlayed >= self::MAX_BATTLE_ROUNDS){
-            echo "GAME OVER - ".self::MAX_BATTLE_ROUNDS." rounds were played! <br/>";
+            echo "--- GAME OVER --- - ".self::MAX_BATTLE_ROUNDS." rounds were played! <br/>";
             if($this->attacker->getHealth() > $this->defender->getHealth()){
                 echo "Winner is " . $this->attacker->getName();
             }elseif($this->attacker->getHealth() < $this->defender->getHealth()){
@@ -94,9 +94,9 @@ class Gameplay
                 echo "The match ended as a draw";
             }
         } elseif($this->attacker->isAlive()){
-            echo('GAME OVER <br>' . $this->attacker->getName() . ' - won the fight!');
+            echo('--- GAME OVER ---- <br>' . $this->attacker->getName() . ' - won the fight!');
         }else{
-            echo('GAME OVER <br/>' . $this->defender->getName() . ' - won the fight!');
+            echo('--- GAME OVER --- <br/>' . $this->defender->getName() . ' - won the fight!');
         }
     }
 

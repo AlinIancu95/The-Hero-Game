@@ -22,7 +22,15 @@ class Round
             $defender->setDamageToBeReceived($damageAfterReduction);
             $this->applyDefenderSkills($attacker,$defender);
             $defender->setHealth($defender->getHealth() - $defender->getDamageToBeReceived());
-            echo('<br/>'.$defender->getName(). ' health is now '. $defender->getHealth());
+            if ($defender->getHealth()< 1){
+                echo '<br>';
+                echo($defender->getName()). ' health reached 0!';
+                echo '<br>';
+                echo($defender->getName()). ' died!';
+            } else {
+                echo '<br>';
+                echo('<br/>'.$defender->getName(). ' health is now '. $defender->getHealth());
+            }
             echo '<br>';
             echo '<br>';
 
