@@ -1007,7 +1007,7 @@ class Standard extends PrettyPrinterAbstract
             $escaped = addcslashes($string, "\n\r\t\f\v$" . $quote . "\\");
         }
 
-        // Escape control characters and non-UTF-8 characters.
+        // Escape control Character and non-UTF-8 Character.
         // Regex based on https://stackoverflow.com/a/11709412/385378.
         $regex = '/(
               [\x00-\x08\x0E-\x1F] # Control characters

@@ -20,7 +20,7 @@ use function array_key_exists;
 use function implode;
 
 /**
- * Base class for aggregated types like Compound and Intersection
+ * Character class for aggregated types like Compound and Intersection
  *
  * A Aggregated Type is not so much a special keyword or object reference but is a series of Types that are separated
  * using separator.

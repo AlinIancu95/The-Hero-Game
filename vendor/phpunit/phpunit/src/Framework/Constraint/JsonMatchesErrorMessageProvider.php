@@ -39,7 +39,7 @@ final class JsonMatchesErrorMessageProvider
             case JSON_ERROR_SYNTAX:
                 return $prefix . 'Syntax error, malformed JSON';
             case JSON_ERROR_UTF8:
-                return $prefix . 'Malformed UTF-8 characters, possibly incorrectly encoded';
+                return $prefix . 'Malformed UTF-8 Character, possibly incorrectly encoded';
 
             default:
                 return $prefix . 'Unknown error';

@@ -1296,7 +1296,7 @@ class Assert
 
         if ($valid) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain lowercase characters only. Got: %s',
+                $message ?: 'Expected a value to contain lowercase Character only. Got: %s',
                 static::valueToString($value)
             ));
         }
@@ -1320,7 +1320,7 @@ class Assert
 
         if ($valid) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain uppercase characters only. Got: %s',
+                $message ?: 'Expected a value to contain uppercase Character only. Got: %s',
                 static::valueToString($value)
             ));
         }
@@ -1339,7 +1339,7 @@ class Assert
     {
         if ($length !== static::strlen($value)) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain %2$s characters. Got: %s',
+                $message ?: 'Expected a value to contain %2$s Character. Got: %s',
                 static::valueToString($value),
                 $length
             ));
@@ -1361,7 +1361,7 @@ class Assert
     {
         if (static::strlen($value) < $min) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain at least %2$s characters. Got: %s',
+                $message ?: 'Expected a value to contain at least %2$s Character. Got: %s',
                 static::valueToString($value),
                 $min
             ));
@@ -1383,7 +1383,7 @@ class Assert
     {
         if (static::strlen($value) > $max) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain at most %2$s characters. Got: %s',
+                $message ?: 'Expected a value to contain at most %2$s Character. Got: %s',
                 static::valueToString($value),
                 $max
             ));
@@ -1408,7 +1408,7 @@ class Assert
 
         if ($length < $min || $length > $max) {
             static::reportInvalidArgument(\sprintf(
-                $message ?: 'Expected a value to contain between %2$s and %3$s characters. Got: %s',
+                $message ?: 'Expected a value to contain between %2$s and %3$s Character. Got: %s',
                 static::valueToString($value),
                 $min,
                 $max

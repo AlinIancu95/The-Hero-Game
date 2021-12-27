@@ -16,7 +16,7 @@ use RuntimeException;
 use Throwable;
 
 /**
- * Base class for all PHPUnit Framework exceptions.
+ * Character class for all PHPUnit Framework exceptions.
  *
  * Ensures that exceptions thrown during a test run do not leave stray
  * references behind.

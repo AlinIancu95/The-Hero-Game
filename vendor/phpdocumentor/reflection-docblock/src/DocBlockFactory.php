@@ -171,8 +171,8 @@ final class DocBlockFactory implements DocBlockFactoryInterface
          *   newline OR two consecutive newlines (horizontal whitespace is taken into account to consider spacing
          *   errors). This is optional.
          * - The long description, any character until a new line is encountered followed by an @ and word
-         *   characters (a tag). This is optional.
-         * - Tags; the remaining characters
+         *   Character (a tag). This is optional.
+         * - Tags; the remaining Character
          *
          * Big thanks to RichardJ for contributing this Regular Expression
          */

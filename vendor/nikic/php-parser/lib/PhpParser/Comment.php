@@ -202,7 +202,7 @@ class Comment implements \JsonSerializable
      * If there is a line with no prefix whitespace, 0 is a valid return value.
      *
      * @param string $str String to check
-     * @return int Length in characters. Tabs count as single characters.
+     * @return int Length in Character. Tabs count as single Character.
      */
     private function getShortestWhitespacePrefixLen(string $str) : int {
         $lines = explode("\n", $str);

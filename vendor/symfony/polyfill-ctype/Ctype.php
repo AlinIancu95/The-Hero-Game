@@ -117,7 +117,7 @@ final class Ctype
     }
 
     /**
-     * Returns TRUE if every character in text will actually create output (including blanks). Returns FALSE if text contains control characters or characters that do not have any output or control function at all.
+     * Returns TRUE if every character in text will actually create output (including blanks). Returns FALSE if text contains control Character or Character that do not have any output or control function at all.
      *
      * @see https://php.net/ctype-print
      *
